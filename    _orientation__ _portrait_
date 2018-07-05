@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    ServerName ko3n.nl
+    Redirect "/" "https://ko3n.nl/"
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName www.ko3n.nl
+    Redirect "/" "https://ko3n.nl/"
+</VirtualHost>

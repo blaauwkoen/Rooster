@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97206337-1"></script>
+<link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 11, 2018").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("ctd").innerHTML = "Nog " + days + " dagen ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "868fe6da-966b-4fe3-bc6f-bc4fc26ea28c",
+    });
+  });
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97206337-1');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2066702523961089",
+          enable_page_level_ads: true
+     });
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2066702523961089",
+          enable_page_level_ads: true
+     });
+</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+ <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#FF2254">
+
+	<title>A+ Rooster</title>
+</head>
+<body>
+	<div class="row menu">
+  <div class="col-3"><a href="index.html"><div class="logo"><img src="logo.png"></div></a></div>
+  <div class="col-3"><div class="roostertext"><h1 class="day">Rooster</h1><h2 class="day">klas 2</h2></div></div>
+  <div class="col-2 no-gutters"><a href="1.html"><div class="logo logo1 inactive"><h4>1</h4></div></a></div>
+  <div class="col-2 no-gutters"><div class="logo logo2"><h4>2</h4></div></div>
+  <div class="col-2 no-gutters"><a href="3.html"><div class="inactive logo logo3"><h4>3</h4></div></a></div>
+  <!--<div class="col-2"><div class="logo white"><img src="logoparty.png"></div></div>
+  <div class="col-7"><div class="roostertext"><h1 class="day">Feest voor atheneumplus</h1><h2 class="dy">28 juni, 20:00-23:30</h2></div></div>
+  <div class="col-3"><a href="over.html"><h1 class="link">Feest âžœ</h1></a></div>*/-->
+</div><br>
+<div class="row">
+  <div class="col-4"><div class="date"><h1 class="day">Dagen tot einde toetsweek</h2><h2 id="ctd" class="day">Nog maar X dagen</h1></div></div>
+	<div class="col-4"><div class="date"><h1 class="day">Totaal aantal toetsen</h1><h2 class="day class">8</h2></div></div>
+	<div class="col-4"><div class="date"><h1 class="day">Lokalen</h1><h2 class="day class">A2+: 2.01</h2><h2 class="class day">B2+: 2.02</h2><h2 class="class day">C2+: 2.13</h2></div></div>
+</div>
+	<div class="date"><h1 class="day">Maandag ✅</h1><h2 class="day">2 juli</h2></div>
+	<div class="test" style="background-color:#FFA825"><h1 class="chap">🇪🇸 Spaans</h1><h2 class="chap">10:00 - 11:00</h2><h2 class="chap toetsstof">- ww hfst 1-10 kopie (SP-NL/ NL-SP) - presente (t.t.) - futuro (ir + a + inf.) - presente perfecto/ pretérito perfecto (v.t.t.) - marcadores pres.perf - ww als gustar, encantar, doler (doler + lichaamsdelen in kopie) - ww met vaak een mw (mandar, enviar, pedir etc.) - grijze blokken para comunicarse 1 tm 10 & aanwijzende voornaamwoorden</h2></div>
+<div class="test test2" style="background-color:#257CFF"><h1 class="chap">🌍 Aardijkskunde</h1><h2 class="chap">11:30 - 12:30</h2><h2 class="chap toetsstof">Weer en klimaat, windsystemen en natuurlijke zones.</h2></div>
+
+	<div class="date"><h1 class="day">Dinsdag ✅</h1><h2 class="day">3 juli</h2></div>
+	<div class="test" style="background-color:#FF3225"><h1 class="chap">🇩🇪 Duits</h1><h2 class="chap">08:30 - 09:30</h2><h2 class="chap toetsstof">Woordjes hoofdstuk 7&8 D-N en leesteksten.</h2></div>
+
+	<div class="date"><h1 class="day">Woensdag ✅</h1><h2 class="day">4 juli</h2></div>
+	<div class="test" style="background-color:#FFB525"><h1 class="chap">🌷 Nederlands</h1><h2 class="chap">08:30 - 09:30</h2><h2 class="chap toetsstof">Leesvaardigheid (p120 -  129, p154 - 162), spelling (p231 - 249).</h2></div>
+
+	<div class="date"><h1 class="day">Donderdag ✅</h1><h2 class="day">5 juli</h2></div>
+	<div class="test" style="background-color:#29FF25"><h1 class="chap">🇬🇧 Engels</h1><h2 class="chap">08:30 - 09:30</h2><h2 class="chap toetsstof">Examtexts, simple havo texts, vmbo texts and irregular verbs.</h2></div>
+
+	<div class="date"><h1 class="day">Vrijdag</h1><h2 class="day">6 juli</h2></div>
+	<div class="test" style="background-color:#25BEFF"><h1 class="chap">🇫🇷 Frans</h1><h2 class="chap">10:00 - 11:00</h2><h2 class="chap toetsstof">Heel hoofdstuk 6, aantekeningen, oefenen via <a href="http://zernike.magister.net" target="_blank">Magister.</a></h2></div>
+	
+
+	<div class="weekend"><h3>- weekend -</h3></div>
+
+	<div class="date"><h1 class="day">Maandag</h1><h2 class="day">9 juli</h2></div>
+	<div class="test" style="background-color:#959595"><h1 class="chap">📆 Geschiedenis</h1><h2 class="chap">10:00 - 11:00</h2><h2 class="chap toetsstof">Hoofdstuk 5. Paragraaf 1 t/m 5, aantekeningen en werkbladen.</h2></div>
+
+	<div class="date"><h1 class="day">Dinsdag</h1><h2 class="day">10 juli</h2></div>
+	<div class="test" style="background-color:#FF25C2"><h1 class="chap">🍃 Biologie</h1><h2 class="chap">08:30 - 09:30</h2><h2 class="chap toetsstof">Heel hoofdstuk 8, 1 t/m 11, aantekeningen, leren via <a href="http://biologiepagina.nl" target="_blank">biologiepagina.</a></h2></div>
+
+
+<a href="over.html"><p class="link">Over deze site</a> | Versie <a href="https://headwayapp.co/atheneumplus--rooster-changelog">1.1</a> | gemaakt door <a href="https://ko3n.nl">Koen Blaauw</a> | <a class="typeform-share " href="https://blaauwkoen.typeform.com/to/dWGWHq" data-mode="drawer_left"  data-submit-close-delay="5" target="_blank">Meld fout of toetsstof</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></p>
+</body>
+</html>
